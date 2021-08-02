@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+p{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+#Movies{
+    margin-top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    display: inline;
+    border-right: 3px solid;
+    animation: blinkTextCursor 500ms steps(20) infinite  ;
+   
+}
+img{
+    margin-top: 10px;
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+
+@keyframes blinkTextCursor {
+    from{
+        border-right-color: black;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
